@@ -19,7 +19,7 @@ class JIRASession: NSObject {
         settings = ["host": host, "version": version, "user": username, "pass": password]
     }
     
-    class func get(path:String, params:NSDictionary?, callback: JIRARequestCallback) {
+    class func get(path: String, params: [String:AnyObject]?, callback: JIRARequestCallback) {
         let request = self.request(path, params: params)
         if request == nil {
             callback(nil, nil, NSError(domain: "JIRASession", code: -1, userInfo: ["error":"Settings not set"]))
@@ -39,8 +39,8 @@ class JIRASession: NSObject {
         task.resume()
     }
 
-    class func post(path: String, payload: NSDictionary?, callback: JIRARequestCallback) {
-        let request = self.request(path, params: nil)
+    class func post(path: String, params: [String:AnyObject]?, payload: [String:AnyObject]?, callback: JIRARequestCallback) {
+        let request = self.request(path, params: params)
         if request == nil {
             callback(nil, nil, NSError(domain: "JIRASession", code: -1, userInfo: ["error":"Settings not set"]))
             return
@@ -66,15 +66,22 @@ class JIRASession: NSObject {
         task.resume()
     }
 
-    private class func request(urlPath:String, params:NSDictionary?) -> NSMutableURLRequest? {
+    private class func request(urlPath: String, params: [String:AnyObject]?) -> NSMutableURLRequest? {
         if settings == nil {
             return nil
         }
         
-        let url = NSURL(string:settings!["host"]!)!
+        var url = NSURL(string:settings!["host"]!)!
             .URLByAppendingPathComponent("/rest/api/")
             .URLByAppendingPathComponent(settings!["version"]!)
             .URLByAppendingPathComponent(urlPath)
+            
+        if let paramString = params?.stringFromHttpParameters() {
+            if let urlString = url.absoluteString?.stringByAppendingString("?\(paramString)") {
+                url = NSURL(string: urlString)!
+            }
+        }
+
         println(url)
         
         let login = NSString(format: "%@:%@", settings!["user"]!, settings!["pass"]!).dataUsingEncoding(NSUTF8StringEncoding)

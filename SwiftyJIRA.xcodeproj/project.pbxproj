@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		958448B51AE7EF570074EE44 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 958448B31AE7EF570074EE44 /* Config.plist */; };
+		958448B71AE81D360074EE44 /* String+SwiftyJIRA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958448B61AE81D360074EE44 /* String+SwiftyJIRA.swift */; };
+		958448B81AE81D360074EE44 /* String+SwiftyJIRA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958448B61AE81D360074EE44 /* String+SwiftyJIRA.swift */; };
+		958448BA1AE81D480074EE44 /* Dictionary+SwiftyJIRA.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958448B91AE81D480074EE44 /* Dictionary+SwiftyJIRA.swift.swift */; };
+		958448BB1AE81D480074EE44 /* Dictionary+SwiftyJIRA.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958448B91AE81D480074EE44 /* Dictionary+SwiftyJIRA.swift.swift */; };
 		959AB0B21AE75AB9003289B8 /* SwiftyJIRA.h in Headers */ = {isa = PBXBuildFile; fileRef = 959AB0B11AE75AB9003289B8 /* SwiftyJIRA.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		959AB0B81AE75AB9003289B8 /* SwiftyJIRA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 959AB0AC1AE75AB9003289B8 /* SwiftyJIRA.framework */; };
 		959AB0CA1AE75B95003289B8 /* JIRAIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959AB0C81AE75B95003289B8 /* JIRAIssue.swift */; };
@@ -27,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		958448B31AE7EF570074EE44 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Config.plist; path = ../SwiftyJIRA/Config.plist; sourceTree = "<group>"; };
+		958448B61AE81D360074EE44 /* String+SwiftyJIRA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SwiftyJIRA.swift"; sourceTree = "<group>"; };
+		958448B91AE81D480074EE44 /* Dictionary+SwiftyJIRA.swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+SwiftyJIRA.swift.swift"; sourceTree = "<group>"; };
 		959AB0AC1AE75AB9003289B8 /* SwiftyJIRA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJIRA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		959AB0B01AE75AB9003289B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		959AB0B11AE75AB9003289B8 /* SwiftyJIRA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyJIRA.h; sourceTree = "<group>"; };
@@ -56,6 +64,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		958448BC1AE81D4E0074EE44 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				958448B91AE81D480074EE44 /* Dictionary+SwiftyJIRA.swift.swift */,
+				958448B61AE81D360074EE44 /* String+SwiftyJIRA.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		959AB0A21AE75AB9003289B8 = {
 			isa = PBXGroup;
 			children = (
@@ -77,10 +94,11 @@
 		959AB0AE1AE75AB9003289B8 /* SwiftyJIRA */ = {
 			isa = PBXGroup;
 			children = (
+				958448BC1AE81D4E0074EE44 /* Extensions */,
 				959AB0C81AE75B95003289B8 /* JIRAIssue.swift */,
 				959AB0C91AE75B95003289B8 /* JIRASession.swift */,
-				959AB0B11AE75AB9003289B8 /* SwiftyJIRA.h */,
 				959AB0AF1AE75AB9003289B8 /* Supporting Files */,
+				959AB0B11AE75AB9003289B8 /* SwiftyJIRA.h */,
 			);
 			path = SwiftyJIRA;
 			sourceTree = "<group>";
@@ -105,6 +123,7 @@
 		959AB0BC1AE75AB9003289B8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				958448B31AE7EF570074EE44 /* Config.plist */,
 				959AB0BD1AE75AB9003289B8 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -207,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				958448B51AE7EF570074EE44 /* Config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +237,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				958448BA1AE81D480074EE44 /* Dictionary+SwiftyJIRA.swift.swift in Sources */,
+				958448B71AE81D360074EE44 /* String+SwiftyJIRA.swift in Sources */,
 				959AB0CC1AE75B95003289B8 /* JIRASession.swift in Sources */,
 				959AB0CA1AE75B95003289B8 /* JIRAIssue.swift in Sources */,
 			);
@@ -226,9 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				958448B81AE81D360074EE44 /* String+SwiftyJIRA.swift in Sources */,
 				959AB0CD1AE75B95003289B8 /* JIRASession.swift in Sources */,
 				959AB0CF1AE75DC3003289B8 /* JIRASessionTests.swift in Sources */,
 				959AB0CB1AE75B95003289B8 /* JIRAIssue.swift in Sources */,
+				958448BB1AE81D480074EE44 /* Dictionary+SwiftyJIRA.swift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
