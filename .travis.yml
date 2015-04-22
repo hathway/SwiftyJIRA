@@ -1,0 +1,12 @@
+language: objective-c
+
+before_script: 
+- set -e
+- gem install xcpretty
+
+script:
+- set -o pipefail && xcodebuild -project SwiftyJIRA.xcodeproj -scheme SwiftyJIRA clean test ONLY_ACTIVE_ARCH=NO | xcpretty -c
+
+notifications:
+  slack: hathway:ICoDkXGMdsOLyl4IwmenBPHL
+
