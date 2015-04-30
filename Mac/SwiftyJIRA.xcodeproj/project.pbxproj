@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		958448B51AE7EF570074EE44 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 958448B31AE7EF570074EE44 /* Config.plist */; };
-		958448B71AE81D360074EE44 /* String+SwiftyJIRA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958448B61AE81D360074EE44 /* String+SwiftyJIRA.swift */; };
-		958448B81AE81D360074EE44 /* String+SwiftyJIRA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958448B61AE81D360074EE44 /* String+SwiftyJIRA.swift */; };
-		958448BA1AE81D480074EE44 /* Dictionary+SwiftyJIRA.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958448B91AE81D480074EE44 /* Dictionary+SwiftyJIRA.swift.swift */; };
-		958448BB1AE81D480074EE44 /* Dictionary+SwiftyJIRA.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958448B91AE81D480074EE44 /* Dictionary+SwiftyJIRA.swift.swift */; };
 		959AB0B21AE75AB9003289B8 /* SwiftyJIRA.h in Headers */ = {isa = PBXBuildFile; fileRef = 959AB0B11AE75AB9003289B8 /* SwiftyJIRA.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		959AB0B81AE75AB9003289B8 /* SwiftyJIRA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 959AB0AC1AE75AB9003289B8 /* SwiftyJIRA.framework */; };
-		959AB0CA1AE75B95003289B8 /* JIRAIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959AB0C81AE75B95003289B8 /* JIRAIssue.swift */; };
-		959AB0CB1AE75B95003289B8 /* JIRAIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959AB0C81AE75B95003289B8 /* JIRAIssue.swift */; };
-		959AB0CC1AE75B95003289B8 /* JIRASession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959AB0C91AE75B95003289B8 /* JIRASession.swift */; };
-		959AB0CD1AE75B95003289B8 /* JIRASession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959AB0C91AE75B95003289B8 /* JIRASession.swift */; };
 		959AB0CF1AE75DC3003289B8 /* JIRASessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959AB0CE1AE75DC3003289B8 /* JIRASessionTests.swift */; };
+		95AFBD471AF1C2F600A9210E /* Dictionary+SwiftyJIRA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD431AF1C2F600A9210E /* Dictionary+SwiftyJIRA.swift */; };
+		95AFBD481AF1C2F600A9210E /* JIRAIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD441AF1C2F600A9210E /* JIRAIssue.swift */; };
+		95AFBD491AF1C2F600A9210E /* JIRASession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD451AF1C2F600A9210E /* JIRASession.swift */; };
+		95AFBD4A1AF1C2F600A9210E /* String+SwiftyJIRA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD461AF1C2F600A9210E /* String+SwiftyJIRA.swift */; };
+		95AFBD4C1AF1C34800A9210E /* Dictionary+SwiftyJIRA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD431AF1C2F600A9210E /* Dictionary+SwiftyJIRA.swift */; };
+		95AFBD4D1AF1C34800A9210E /* JIRAIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD441AF1C2F600A9210E /* JIRAIssue.swift */; };
+		95AFBD4E1AF1C34800A9210E /* JIRASession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD451AF1C2F600A9210E /* JIRASession.swift */; };
+		95AFBD4F1AF1C34800A9210E /* String+SwiftyJIRA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD461AF1C2F600A9210E /* String+SwiftyJIRA.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +33,16 @@
 
 /* Begin PBXFileReference section */
 		958448B31AE7EF570074EE44 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Config.plist; path = ../SwiftyJIRA/Config.plist; sourceTree = "<group>"; };
-		958448B61AE81D360074EE44 /* String+SwiftyJIRA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SwiftyJIRA.swift"; sourceTree = "<group>"; };
-		958448B91AE81D480074EE44 /* Dictionary+SwiftyJIRA.swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+SwiftyJIRA.swift.swift"; sourceTree = "<group>"; };
 		959AB0AC1AE75AB9003289B8 /* SwiftyJIRA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJIRA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		959AB0B01AE75AB9003289B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		959AB0B11AE75AB9003289B8 /* SwiftyJIRA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyJIRA.h; sourceTree = "<group>"; };
 		959AB0B71AE75AB9003289B8 /* SwiftyJIRATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyJIRATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		959AB0BD1AE75AB9003289B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		959AB0C81AE75B95003289B8 /* JIRAIssue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JIRAIssue.swift; sourceTree = "<group>"; };
-		959AB0C91AE75B95003289B8 /* JIRASession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JIRASession.swift; sourceTree = "<group>"; };
 		959AB0CE1AE75DC3003289B8 /* JIRASessionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JIRASessionTests.swift; sourceTree = "<group>"; };
+		95AFBD431AF1C2F600A9210E /* Dictionary+SwiftyJIRA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Dictionary+SwiftyJIRA.swift"; path = "../Common/Dictionary+SwiftyJIRA.swift"; sourceTree = "<group>"; };
+		95AFBD441AF1C2F600A9210E /* JIRAIssue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JIRAIssue.swift; path = ../Common/JIRAIssue.swift; sourceTree = "<group>"; };
+		95AFBD451AF1C2F600A9210E /* JIRASession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JIRASession.swift; path = ../Common/JIRASession.swift; sourceTree = "<group>"; };
+		95AFBD461AF1C2F600A9210E /* String+SwiftyJIRA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "String+SwiftyJIRA.swift"; path = "../Common/String+SwiftyJIRA.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,18 +64,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		958448BC1AE81D4E0074EE44 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				958448B91AE81D480074EE44 /* Dictionary+SwiftyJIRA.swift.swift */,
-				958448B61AE81D360074EE44 /* String+SwiftyJIRA.swift */,
-			);
-			name = Extensions;
-			sourceTree = "<group>";
-		};
 		959AB0A21AE75AB9003289B8 = {
 			isa = PBXGroup;
 			children = (
+				95AFBD4B1AF1C31900A9210E /* Common */,
 				959AB0AE1AE75AB9003289B8 /* SwiftyJIRA */,
 				959AB0BB1AE75AB9003289B8 /* SwiftyJIRATests */,
 				959AB0AD1AE75AB9003289B8 /* Products */,
@@ -94,9 +86,6 @@
 		959AB0AE1AE75AB9003289B8 /* SwiftyJIRA */ = {
 			isa = PBXGroup;
 			children = (
-				958448BC1AE81D4E0074EE44 /* Extensions */,
-				959AB0C81AE75B95003289B8 /* JIRAIssue.swift */,
-				959AB0C91AE75B95003289B8 /* JIRASession.swift */,
 				959AB0AF1AE75AB9003289B8 /* Supporting Files */,
 				959AB0B11AE75AB9003289B8 /* SwiftyJIRA.h */,
 			);
@@ -127,6 +116,17 @@
 				959AB0BD1AE75AB9003289B8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95AFBD4B1AF1C31900A9210E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				95AFBD431AF1C2F600A9210E /* Dictionary+SwiftyJIRA.swift */,
+				95AFBD441AF1C2F600A9210E /* JIRAIssue.swift */,
+				95AFBD451AF1C2F600A9210E /* JIRASession.swift */,
+				95AFBD461AF1C2F600A9210E /* String+SwiftyJIRA.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,10 +237,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				958448BA1AE81D480074EE44 /* Dictionary+SwiftyJIRA.swift.swift in Sources */,
-				958448B71AE81D360074EE44 /* String+SwiftyJIRA.swift in Sources */,
-				959AB0CC1AE75B95003289B8 /* JIRASession.swift in Sources */,
-				959AB0CA1AE75B95003289B8 /* JIRAIssue.swift in Sources */,
+				95AFBD471AF1C2F600A9210E /* Dictionary+SwiftyJIRA.swift in Sources */,
+				95AFBD481AF1C2F600A9210E /* JIRAIssue.swift in Sources */,
+				95AFBD491AF1C2F600A9210E /* JIRASession.swift in Sources */,
+				95AFBD4A1AF1C2F600A9210E /* String+SwiftyJIRA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,11 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				958448B81AE81D360074EE44 /* String+SwiftyJIRA.swift in Sources */,
-				959AB0CD1AE75B95003289B8 /* JIRASession.swift in Sources */,
+				95AFBD4C1AF1C34800A9210E /* Dictionary+SwiftyJIRA.swift in Sources */,
+				95AFBD4D1AF1C34800A9210E /* JIRAIssue.swift in Sources */,
+				95AFBD4E1AF1C34800A9210E /* JIRASession.swift in Sources */,
+				95AFBD4F1AF1C34800A9210E /* String+SwiftyJIRA.swift in Sources */,
 				959AB0CF1AE75DC3003289B8 /* JIRASessionTests.swift in Sources */,
-				959AB0CB1AE75B95003289B8 /* JIRAIssue.swift in Sources */,
-				958448BB1AE81D480074EE44 /* Dictionary+SwiftyJIRA.swift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
