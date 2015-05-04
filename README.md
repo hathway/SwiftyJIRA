@@ -1,11 +1,10 @@
 # SwiftyJIRA
 
-SwiftyJIRA is a Cocoa Framework that wraps JIRA REST API.
+SwiftyJIRA is a JIRA SDK for iOS and OS X.
 
-JIRA version: 6.x
+Minimum JIRA version: 6.x
 
 ## Installation
-
 
 
 ## Usage
