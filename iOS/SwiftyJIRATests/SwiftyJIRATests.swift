@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Hathway, Inc. All rights reserved.
 //
 
-import UIKit
 import XCTest
+@testable import SwiftyJIRA
 
 class SwiftyJIRATests: XCTestCase {
     
