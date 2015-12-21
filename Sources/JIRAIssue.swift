@@ -8,33 +8,44 @@
 
 import Foundation
 
-typealias JIRAIssueList = [JIRAIssue]
-typealias JIRAIssueCallback = (JIRAIssueList?, NSError?) -> Void
+struct JIRAIssue {
+
+    var issueKey: String
+    var summary: String
+    var issueType: String
+    var status: String
+
+}
 
 
-class JIRAIssue: NSObject {
+// MARK: Active Record
 
-    /// Class method to retrieve a single JIRA issue by Key
-    func issue(issueKey: String, callback: JIRAIssueCallback) {
-//        JIRASession.get("issue/\(issueKey)", params: nil) { (json, response, error) in
-//            // TODO: Parse results into JIRAIssue instances
-//            callback([], nil)
-//        }
-        JIRASession.sharedSession.get("issue/\(issueKey)", params: JIRAQueryParams())
+extension JIRAIssue {
+    static func issue(issueKey: String) -> JIRAIssue? {
+        let result = JIRASession.sharedSession.get("issue/\(issueKey)", params: JIRAQueryParams())
+        switch result {
+        case .Success(let data, let response):
+            // TODO: Parse response and return JIRAIssue instance
+            break
+        case .Failure(let error, let response):
+            break
+        }
+        return nil
     }
-    
-    func search(query: String, callback: JIRAIssueCallback) {
+
+    static func search(query: String) -> [JIRAIssue] {
         let payload: JIRAPayload = [
             "jql": query,
             "startAt": 0,
-            "maxResults": 10,
+            "maxResults": 100,
             "fields": [
                 "summary",
                 "status",
                 "issueType"
             ]
         ]
-        JIRASession.sharedSession.post("search", params: JIRAQueryParams(), payload: payload)
+        let result = JIRASession.sharedSession.post("search", params: JIRAQueryParams(), payload: payload)
+        return []
     }
-    
+
 }

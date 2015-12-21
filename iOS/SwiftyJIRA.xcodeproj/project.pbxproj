@@ -25,10 +25,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		953CEDB71C288AE300C197F5 /* Dictionary+SwiftyJIRA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+SwiftyJIRA.swift"; sourceTree = "<group>"; };
 		953CEDB81C288AE300C197F5 /* JIRAIssue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JIRAIssue.swift; sourceTree = "<group>"; };
 		953CEDB91C288AE300C197F5 /* JIRASession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JIRASession.swift; sourceTree = "<group>"; };
-		953CEDBA1C288AE300C197F5 /* String+SwiftyJIRA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SwiftyJIRA.swift"; sourceTree = "<group>"; };
 		95AFBD211AF1BFE200A9210E /* SwiftyJIRA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJIRA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95AFBD251AF1BFE200A9210E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95AFBD261AF1BFE200A9210E /* SwiftyJIRA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyJIRA.h; sourceTree = "<group>"; };
@@ -59,10 +57,8 @@
 		953CEDB61C288AE300C197F5 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				953CEDB71C288AE300C197F5 /* Dictionary+SwiftyJIRA.swift */,
 				953CEDB81C288AE300C197F5 /* JIRAIssue.swift */,
 				953CEDB91C288AE300C197F5 /* JIRASession.swift */,
-				953CEDBA1C288AE300C197F5 /* String+SwiftyJIRA.swift */,
 			);
 			name = Sources;
 			path = ../Sources;

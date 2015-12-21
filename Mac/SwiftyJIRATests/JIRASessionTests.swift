@@ -11,18 +11,15 @@ import XCTest
 
 class JIRASessionTests: XCTestCase {
 
-    var JIRAHost: String?
-    var JIRAUser: String?
-    var JIRAPass: String?
-    
     override func setUp() {
         super.setUp()
 
         if let path = NSBundle(forClass: JIRASessionTests.self).pathForResource("Config", ofType: "plist") {
             if let config = NSDictionary(contentsOfFile: path) as? [String : AnyObject] {
-                JIRAHost = config["JIRAHost"] as? String
-                JIRAUser = config["JIRAUser"] as? String
-                JIRAPass = config["JIRAPass"] as? String
+                let host = config["JIRAHost"] as? String ?? ""
+                let user = config["JIRAUser"] as? String ?? ""
+                let pass = config["JIRAPass"] as? String ?? ""
+                JIRASession.sharedSession.configure(host, version: "latest", username: user, password: pass)
             }
         }
     }
@@ -43,16 +40,8 @@ class JIRASessionTests: XCTestCase {
     }
 
     func testServerInfo() {
-        let expectation = self.expectationWithDescription("JIRA")
-
-//        JIRASession.initialize(JIRAHost!, version: "latest", username: JIRAUser!, password: JIRAPass!)
-//        JIRASession.get("serverinfo", params: ["doHealthCheck": "false"]) { (result, response, error) -> Void in
-////            println(result)
-////            println(response)
-////            println(error)
-            expectation.fulfill()
-//        }
-        self.waitForExpectationsWithTimeout(5.0, handler: nil)
+        let result = JIRASession.sharedSession.get("serverinfo", params: ["doHealthCheck": false])
+        print(result.data)
     }
 
     func testUser() {
