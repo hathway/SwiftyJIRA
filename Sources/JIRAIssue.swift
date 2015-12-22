@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct JIRAIssue {
+public struct JIRAIssue {
 
     var issueKey: String
     var summary: String
@@ -20,11 +20,13 @@ struct JIRAIssue {
 
 // MARK: Active Record
 
-extension JIRAIssue {
-    static func issue(issueKey: String) -> JIRAIssue? {
+public extension JIRAIssue {
+
+    public static func issue(issueKey: String) -> JIRAIssue? {
         let result = JIRASession.sharedSession.get("issue/\(issueKey)", params: JIRAQueryParams())
         switch result {
         case .Success(let data, let response):
+            print(data)
             // TODO: Parse response and return JIRAIssue instance
             break
         case .Failure(let error, let response):
@@ -33,7 +35,7 @@ extension JIRAIssue {
         return nil
     }
 
-    static func search(query: String) -> [JIRAIssue] {
+    public static func search(query: String) -> [JIRAIssue] {
         let payload: JIRAPayload = [
             "jql": query,
             "startAt": 0,
@@ -45,6 +47,7 @@ extension JIRAIssue {
             ]
         ]
         let result = JIRASession.sharedSession.post("search", params: JIRAQueryParams(), payload: payload)
+        print(result.data)
         return []
     }
 

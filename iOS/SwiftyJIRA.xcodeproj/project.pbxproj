@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		95AFBD2E1AF1BFE200A9210E /* PBXContainerItemProxy */ = {
+		953CEDE11C28CB3000C197F5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 95AFBD181AF1BFE200A9210E /* Project object */;
 			proxyType = 1;
@@ -160,7 +160,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				95AFBD2F1AF1BFE200A9210E /* PBXTargetDependency */,
+				953CEDE21C28CB3000C197F5 /* PBXTargetDependency */,
 			);
 			name = SwiftyJIRATests;
 			productName = SwiftyJIRATests;
@@ -241,10 +241,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		95AFBD2F1AF1BFE200A9210E /* PBXTargetDependency */ = {
+		953CEDE21C28CB3000C197F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 95AFBD201AF1BFE200A9210E /* SwiftyJIRA */;
-			targetProxy = 95AFBD2E1AF1BFE200A9210E /* PBXContainerItemProxy */;
+			targetProxy = 953CEDE11C28CB3000C197F5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
