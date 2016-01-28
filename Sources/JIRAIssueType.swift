@@ -27,5 +27,5 @@ public struct JIRAIssueType {
             "id": id
         ]
     }
-    
+
 }

@@ -51,5 +51,5 @@ class SwiftyJIRATests: XCTestCase {
         XCTAssertEqual(serverInfo?.baseUrl, jiraHost)
         XCTAssertEqual(serverInfo?.versionNumbers.count, 3)
     }
-    
+
 }

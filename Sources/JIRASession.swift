@@ -43,24 +43,26 @@ public class JIRASession {
         return request.get(url, queryParams: params)
     }
 
-    func post(urlPath: String, params: JIRAQueryParams? = nil, payload: JIRAPayload? = nil) -> JSONResult {
-        guard let url = buildUrl(urlPath) else {
-            return JSONResult.Failure(error: JSONError.InvalidURL, response: nil, body: nil)
-        }
-        guard let request = request else {
-            return JSONResult.Failure(error: JSONError.RequestFailed, response: nil, body: nil)
-        }
-        return request.post(url, queryParams: params, payload: payload)
+    func post(urlPath: String, params: JIRAQueryParams? = nil,
+        payload: JIRAPayload? = nil) -> JSONResult {
+            guard let url = buildUrl(urlPath) else {
+                return JSONResult.Failure(error: JSONError.InvalidURL, response: nil, body: nil)
+            }
+            guard let request = request else {
+                return JSONResult.Failure(error: JSONError.RequestFailed, response: nil, body: nil)
+            }
+            return request.post(url, queryParams: params, payload: payload)
     }
 
-    func put(urlPath: String, params: JIRAQueryParams? = nil, payload: JIRAPayload? = nil) -> JSONResult {
-        guard let url = buildUrl(urlPath) else {
-            return JSONResult.Failure(error: JSONError.InvalidURL, response: nil, body: nil)
-        }
-        guard let request = request else {
-            return JSONResult.Failure(error: JSONError.RequestFailed, response: nil, body: nil)
-        }
-        return request.put(url, queryParams: params, payload: payload)
+    func put(urlPath: String, params: JIRAQueryParams? = nil,
+        payload: JIRAPayload? = nil) -> JSONResult {
+            guard let url = buildUrl(urlPath) else {
+                return JSONResult.Failure(error: JSONError.InvalidURL, response: nil, body: nil)
+            }
+            guard let request = request else {
+                return JSONResult.Failure(error: JSONError.RequestFailed, response: nil, body: nil)
+            }
+            return request.put(url, queryParams: params, payload: payload)
     }
 
     func buildUrl(urlPath: String) -> String? {
@@ -81,8 +83,9 @@ public class JIRASession {
 
         let login = String(format: "%@:%@", user, pass).dataUsingEncoding(NSUTF8StringEncoding)
         if let base64Login = login?.base64EncodedStringWithOptions([]) {
-            request?.httpRequest?.addValue("Basic \(base64Login)", forHTTPHeaderField: "Authorization")
+            request?.httpRequest?.addValue("Basic \(base64Login)",
+                forHTTPHeaderField: "Authorization")
         }
     }
-    
+
 }

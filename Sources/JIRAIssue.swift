@@ -78,8 +78,8 @@ public extension JIRAIssue {
             "startAt": 0,
             "maxResults": 100
         ]
-        let result = JIRASession.sharedSession.post("search", params: JIRAQueryParams(), payload: payload)
-        //        print(result.data)
+        let result = JIRASession.sharedSession.post("search", params: JIRAQueryParams(),
+            payload: payload)
         let json = JSON(result.data ?? [])
         return json["issues"].arrayValue.map { JIRAIssue(json: $0) }
     }
@@ -104,14 +104,13 @@ public extension JIRAIssue {
             "fields": asDictionary
         ]
         if issueKey == nil {
-            print("Creating new JIRA ticket: '\(summary)'")
-            let result = JIRASession.sharedSession.post("issue", payload: payload as? AnyObject)
+            let result = JIRASession.sharedSession.post("issue", payload: payload as? JIRAPayload)
             print(result)
         } else {
-            print("Updating JIRA ticket: \(issueKey)")
-            let result = JIRASession.sharedSession.put("issue/\(issueKey)", payload: payload as? AnyObject)
+            let result = JIRASession.sharedSession.put("issue/\(issueKey)",
+                payload: payload as? JIRAPayload)
             print(result)
         }
     }
-    
+
 }

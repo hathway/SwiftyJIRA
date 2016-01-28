@@ -23,5 +23,5 @@ public struct JIRAProject {
             "id": projectId
         ]
     }
-    
+
 }
