@@ -10,27 +10,46 @@ import XCTest
 @testable import SwiftyJIRA
 
 class SwiftyJIRATests: XCTestCase {
-    
+
+    var jiraHost = ""
+    var jiraUser = ""
+    var jiraPass = ""
+
     override func setUp() {
         super.setUp()
-        if let path = NSBundle(forClass: SwiftyJIRATests.self).pathForResource("Config", ofType: "plist") {
+        let bundle = NSBundle(forClass: SwiftyJIRATests.self)
+        if let path = bundle.pathForResource("Config", ofType: "plist") {
             if let config = NSDictionary(contentsOfFile: path) as? [String : AnyObject] {
-                let host = config["JIRAHost"] as? String ?? ""
-                let user = config["JIRAUser"] as? String ?? ""
-                let pass = config["JIRAPass"] as? String ?? ""
-                JIRASession.sharedSession.configure(host, version: "latest", username: user, password: pass)
+                jiraHost = config["JIRAHost"] as? String ?? ""
+                jiraUser = config["JIRAUser"] as? String ?? ""
+                jiraPass = config["JIRAPass"] as? String ?? ""
+                JIRASession.sharedSession.configure(jiraHost, version: "latest",
+                    username: jiraUser, password: jiraPass)
             }
         }
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+
+    func testConfigNotEmpty() {
+        let session = JIRASession.sharedSession
+        XCTAssertNotEqual(session.apiVersion, "")
+        XCTAssertNotEqual(session.apiHost, "")
+        XCTAssertNotEqual(session.apiUser, "")
+        XCTAssertNotEqual(session.apiPass, "")
     }
-    
+
+    func testConfigLoaded() {
+        let session = JIRASession.sharedSession
+        XCTAssertEqual(session.apiVersion, "latest")
+        XCTAssertEqual(session.apiHost, jiraHost)
+        XCTAssertEqual(session.apiUser, jiraUser)
+        XCTAssertEqual(session.apiPass, jiraPass)
+    }
+
     func testServerInfo() {
-        let result = JIRASession.sharedSession.get("serverinfo", params: ["doHealthCheck": false])
-        print(result.data)
+        let serverInfo = JIRAServerInfo.serverInfo()
+        XCTAssertNotNil(serverInfo)
+        XCTAssertEqual(serverInfo?.baseUrl, jiraHost)
+        XCTAssertEqual(serverInfo?.versionNumbers.count, 3)
     }
     
 }
