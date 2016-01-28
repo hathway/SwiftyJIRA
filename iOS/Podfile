@@ -1,0 +1,14 @@
+use_frameworks!
+
+def pods()
+  pod 'JSONRequest'
+  pod 'SwiftyJSON'
+end
+
+target 'SwiftyJIRA' do
+  pods()
+end
+
+target 'SwiftyJIRATests' do
+  pods()
+end
