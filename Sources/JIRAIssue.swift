@@ -23,19 +23,20 @@ import SwiftyJSON
 //public struct JIRAIssue: IssueType {
 public class JIRAIssue {
 
-    var issueId: String?
-    var issueKey: String?
-    var project: JIRAProject?
+    public var issueId: String?
+    public var issueKey: String?
+    public var project: JIRAProject?
 
-    var summary: String
-    var issueType: JIRAIssueType
+    public var summary: String
+    public var issueType: JIRAIssueType
 
-    var status: String?
+    public var status: String?
+    public var resolution: String?
 
     // TODO: Simplify parent to avoid grand-parent recursion
-    var parent: JIRAIssue?
+    public var parent: JIRAIssue?
 
-    init(summary: String, issueType: JIRAIssueType) {
+    public init(summary: String, issueType: JIRAIssueType) {
         self.summary = summary
         self.issueType = issueType
     }
@@ -46,6 +47,7 @@ public class JIRAIssue {
         issueType = JIRAIssueType(json: json["fields"]["issuetype"])
         summary = json["fields"]["summary"].stringValue
         status = json["fields"]["status"]["name"].stringValue
+        resolution = json["fields"]["resolution"]["name"].stringValue
 
         if json["fields"]["project"] != JSON.null {
             project = JIRAProject(json: json["fields"]["project"])
