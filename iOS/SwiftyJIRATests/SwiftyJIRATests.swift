@@ -6,31 +6,50 @@
 //  Copyright (c) 2015 Hathway, Inc. All rights reserved.
 //
 
-import UIKit
 import XCTest
+@testable import SwiftyJIRA
 
 class SwiftyJIRATests: XCTestCase {
-    
+
+    var jiraHost = ""
+    var jiraUser = ""
+    var jiraPass = ""
+
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
+        let bundle = NSBundle(forClass: SwiftyJIRATests.self)
+        if let path = bundle.pathForResource("Config", ofType: "plist") {
+            if let config = NSDictionary(contentsOfFile: path) as? [String : AnyObject] {
+                jiraHost = config["JIRAHost"] as? String ?? ""
+                jiraUser = config["JIRAUser"] as? String ?? ""
+                jiraPass = config["JIRAPass"] as? String ?? ""
+                JIRASession.sharedSession.configure(jiraHost, version: "latest",
+                    username: jiraUser, password: jiraPass)
+            }
         }
     }
-    
+
+    func testConfigNotEmpty() {
+        let session = JIRASession.sharedSession
+        XCTAssertNotEqual(session.apiVersion, "")
+        XCTAssertNotEqual(session.apiHost, "")
+        XCTAssertNotEqual(session.apiUser, "")
+        XCTAssertNotEqual(session.apiPass, "")
+    }
+
+    func testConfigLoaded() {
+        let session = JIRASession.sharedSession
+        XCTAssertEqual(session.apiVersion, "latest")
+        XCTAssertEqual(session.apiHost, jiraHost)
+        XCTAssertEqual(session.apiUser, jiraUser)
+        XCTAssertEqual(session.apiPass, jiraPass)
+    }
+
+    func testServerInfo() {
+        let serverInfo = JIRAServerInfo.serverInfo()
+        XCTAssertNotNil(serverInfo)
+        XCTAssertEqual(serverInfo?.baseUrl, jiraHost)
+        XCTAssertEqual(serverInfo?.versionNumbers.count, 3)
+    }
+
 }

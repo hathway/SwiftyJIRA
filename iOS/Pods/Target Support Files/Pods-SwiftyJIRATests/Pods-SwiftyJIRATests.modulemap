@@ -1,0 +1,6 @@
+framework module Pods_SwiftyJIRATests {
+  umbrella header "Pods-SwiftyJIRATests-umbrella.h"
+
+  export *
+  module * { export * }
+}

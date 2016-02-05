@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0B926ADDDEFF2D94657DFF /* Pods_SwiftyJIRA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B1BD2F981136C5BFED5913 /* Pods_SwiftyJIRA.framework */; };
+		28B5CE6C004DC9D151789017 /* Pods_SwiftyJIRATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FD6D7B06CA8D17777B97D4 /* Pods_SwiftyJIRATests.framework */; };
+		953CEDBC1C288AE300C197F5 /* JIRAIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953CEDB81C288AE300C197F5 /* JIRAIssue.swift */; };
+		953CEDBD1C288AE300C197F5 /* JIRASession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953CEDB91C288AE300C197F5 /* JIRASession.swift */; };
 		95AFBD271AF1BFE200A9210E /* SwiftyJIRA.h in Headers */ = {isa = PBXBuildFile; fileRef = 95AFBD261AF1BFE200A9210E /* SwiftyJIRA.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95AFBD2D1AF1BFE200A9210E /* SwiftyJIRA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AFBD211AF1BFE200A9210E /* SwiftyJIRA.framework */; };
 		95AFBD341AF1BFE200A9210E /* SwiftyJIRATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD331AF1BFE200A9210E /* SwiftyJIRATests.swift */; };
-		95AFBD611AF1C53500A9210E /* Dictionary+SwiftyJIRA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD5D1AF1C53500A9210E /* Dictionary+SwiftyJIRA.swift */; };
-		95AFBD621AF1C53500A9210E /* Dictionary+SwiftyJIRA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD5D1AF1C53500A9210E /* Dictionary+SwiftyJIRA.swift */; };
-		95AFBD631AF1C53500A9210E /* JIRAIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD5E1AF1C53500A9210E /* JIRAIssue.swift */; };
-		95AFBD641AF1C53500A9210E /* JIRAIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD5E1AF1C53500A9210E /* JIRAIssue.swift */; };
-		95AFBD651AF1C53500A9210E /* JIRASession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD5F1AF1C53500A9210E /* JIRASession.swift */; };
-		95AFBD661AF1C53500A9210E /* JIRASession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD5F1AF1C53500A9210E /* JIRASession.swift */; };
-		95AFBD671AF1C53500A9210E /* String+SwiftyJIRA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD601AF1C53500A9210E /* String+SwiftyJIRA.swift */; };
-		95AFBD681AF1C53500A9210E /* String+SwiftyJIRA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD601AF1C53500A9210E /* String+SwiftyJIRA.swift */; };
+		95E4E3F61C5AA3DE005CD2D2 /* JIRAIssueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4E3F51C5AA3DE005CD2D2 /* JIRAIssueType.swift */; };
+		95E4E3F81C5AA405005CD2D2 /* JIRAProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4E3F71C5AA405005CD2D2 /* JIRAProject.swift */; };
+		95E4E3FA1C5ABA66005CD2D2 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95E4E3F91C5ABA66005CD2D2 /* Config.plist */; };
+		95E4E3FC1C5ABDF8005CD2D2 /* JIRAServerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4E3FB1C5ABDF8005CD2D2 /* JIRAServerInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		95AFBD2E1AF1BFE200A9210E /* PBXContainerItemProxy */ = {
+		953CEDE11C28CB3000C197F5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 95AFBD181AF1BFE200A9210E /* Project object */;
 			proxyType = 1;
@@ -31,16 +31,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06FD6D7B06CA8D17777B97D4 /* Pods_SwiftyJIRATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyJIRATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D29A03BCC6653BBB7E122D3 /* Pods-SwiftyJIRATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyJIRATests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyJIRATests/Pods-SwiftyJIRATests.release.xcconfig"; sourceTree = "<group>"; };
+		52B1BD2F981136C5BFED5913 /* Pods_SwiftyJIRA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyJIRA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7580A3457C0F1D7087ADB98F /* Pods-SwiftyJIRA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyJIRA.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyJIRA/Pods-SwiftyJIRA.release.xcconfig"; sourceTree = "<group>"; };
+		9316C1610CE51D134582C0F4 /* Pods-SwiftyJIRATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyJIRATests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyJIRATests/Pods-SwiftyJIRATests.debug.xcconfig"; sourceTree = "<group>"; };
+		953CEDB81C288AE300C197F5 /* JIRAIssue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JIRAIssue.swift; sourceTree = "<group>"; };
+		953CEDB91C288AE300C197F5 /* JIRASession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JIRASession.swift; sourceTree = "<group>"; };
 		95AFBD211AF1BFE200A9210E /* SwiftyJIRA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJIRA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95AFBD251AF1BFE200A9210E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95AFBD261AF1BFE200A9210E /* SwiftyJIRA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyJIRA.h; sourceTree = "<group>"; };
 		95AFBD2C1AF1BFE200A9210E /* SwiftyJIRATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyJIRATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95AFBD321AF1BFE200A9210E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95AFBD331AF1BFE200A9210E /* SwiftyJIRATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJIRATests.swift; sourceTree = "<group>"; };
-		95AFBD5D1AF1C53500A9210E /* Dictionary+SwiftyJIRA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Dictionary+SwiftyJIRA.swift"; path = "../Common/Dictionary+SwiftyJIRA.swift"; sourceTree = "<group>"; };
-		95AFBD5E1AF1C53500A9210E /* JIRAIssue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JIRAIssue.swift; path = ../Common/JIRAIssue.swift; sourceTree = "<group>"; };
-		95AFBD5F1AF1C53500A9210E /* JIRASession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JIRASession.swift; path = ../Common/JIRASession.swift; sourceTree = "<group>"; };
-		95AFBD601AF1C53500A9210E /* String+SwiftyJIRA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+SwiftyJIRA.swift"; path = "../Common/String+SwiftyJIRA.swift"; sourceTree = "<group>"; };
+		95E4E3F51C5AA3DE005CD2D2 /* JIRAIssueType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JIRAIssueType.swift; sourceTree = "<group>"; };
+		95E4E3F71C5AA405005CD2D2 /* JIRAProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JIRAProject.swift; sourceTree = "<group>"; };
+		95E4E3F91C5ABA66005CD2D2 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		95E4E3FB1C5ABDF8005CD2D2 /* JIRAServerInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JIRAServerInfo.swift; sourceTree = "<group>"; };
+		E3646538367D120788FA401D /* Pods-SwiftyJIRA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyJIRA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyJIRA/Pods-SwiftyJIRA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C0B926ADDDEFF2D94657DFF /* Pods_SwiftyJIRA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,19 +65,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				95AFBD2D1AF1BFE200A9210E /* SwiftyJIRA.framework in Frameworks */,
+				28B5CE6C004DC9D151789017 /* Pods_SwiftyJIRATests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		182F99B183F88954D8D2304F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3646538367D120788FA401D /* Pods-SwiftyJIRA.debug.xcconfig */,
+				7580A3457C0F1D7087ADB98F /* Pods-SwiftyJIRA.release.xcconfig */,
+				9316C1610CE51D134582C0F4 /* Pods-SwiftyJIRATests.debug.xcconfig */,
+				4D29A03BCC6653BBB7E122D3 /* Pods-SwiftyJIRATests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		953CEDB61C288AE300C197F5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				953CEDB81C288AE300C197F5 /* JIRAIssue.swift */,
+				95E4E3F51C5AA3DE005CD2D2 /* JIRAIssueType.swift */,
+				95E4E3F71C5AA405005CD2D2 /* JIRAProject.swift */,
+				953CEDB91C288AE300C197F5 /* JIRASession.swift */,
+				95E4E3FB1C5ABDF8005CD2D2 /* JIRAServerInfo.swift */,
+			);
+			name = Sources;
+			path = ../Sources;
+			sourceTree = "<group>";
+		};
 		95AFBD171AF1BFE200A9210E = {
 			isa = PBXGroup;
 			children = (
-				95AFBD5C1AF1C36A00A9210E /* Common */,
+				953CEDB61C288AE300C197F5 /* Sources */,
 				95AFBD231AF1BFE200A9210E /* SwiftyJIRA */,
 				95AFBD301AF1BFE200A9210E /* SwiftyJIRATests */,
 				95AFBD221AF1BFE200A9210E /* Products */,
+				182F99B183F88954D8D2304F /* Pods */,
+				CEFE19BC070CD49DB6E2E05F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,19 +147,18 @@
 			isa = PBXGroup;
 			children = (
 				95AFBD321AF1BFE200A9210E /* Info.plist */,
+				95E4E3F91C5ABA66005CD2D2 /* Config.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		95AFBD5C1AF1C36A00A9210E /* Common */ = {
+		CEFE19BC070CD49DB6E2E05F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				95AFBD5D1AF1C53500A9210E /* Dictionary+SwiftyJIRA.swift */,
-				95AFBD5E1AF1C53500A9210E /* JIRAIssue.swift */,
-				95AFBD5F1AF1C53500A9210E /* JIRASession.swift */,
-				95AFBD601AF1C53500A9210E /* String+SwiftyJIRA.swift */,
+				52B1BD2F981136C5BFED5913 /* Pods_SwiftyJIRA.framework */,
+				06FD6D7B06CA8D17777B97D4 /* Pods_SwiftyJIRATests.framework */,
 			);
-			name = Common;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,10 +179,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95AFBD371AF1BFE200A9210E /* Build configuration list for PBXNativeTarget "SwiftyJIRA" */;
 			buildPhases = (
+				2E8EE8055D411BD1ECFD5CAB /* Check Pods Manifest.lock */,
 				95AFBD1C1AF1BFE200A9210E /* Sources */,
 				95AFBD1D1AF1BFE200A9210E /* Frameworks */,
 				95AFBD1E1AF1BFE200A9210E /* Headers */,
 				95AFBD1F1AF1BFE200A9210E /* Resources */,
+				B10992CB485F536F6DE12C52 /* Copy Pods Resources */,
+				95E4E3FD1C5AC3F4005CD2D2 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -162,14 +200,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95AFBD3A1AF1BFE200A9210E /* Build configuration list for PBXNativeTarget "SwiftyJIRATests" */;
 			buildPhases = (
+				B4ED3C2733147708EEDA54B8 /* Check Pods Manifest.lock */,
 				95AFBD281AF1BFE200A9210E /* Sources */,
 				95AFBD291AF1BFE200A9210E /* Frameworks */,
 				95AFBD2A1AF1BFE200A9210E /* Resources */,
+				1C9AF1A1427D7C8C87B10724 /* Embed Pods Frameworks */,
+				EA15EC3D1F6CDDFD71A79A01 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				95AFBD2F1AF1BFE200A9210E /* PBXTargetDependency */,
+				953CEDE21C28CB3000C197F5 /* PBXTargetDependency */,
 			);
 			name = SwiftyJIRATests;
 			productName = SwiftyJIRATests;
@@ -182,7 +223,8 @@
 		95AFBD181AF1BFE200A9210E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Hathway, Inc.";
 				TargetAttributes = {
 					95AFBD201AF1BFE200A9210E = {
@@ -223,20 +265,114 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95E4E3FA1C5ABA66005CD2D2 /* Config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C9AF1A1427D7C8C87B10724 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftyJIRATests/Pods-SwiftyJIRATests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E8EE8055D411BD1ECFD5CAB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		95E4E3FD1C5AC3F4005CD2D2 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/swiftlint\n";
+		};
+		B10992CB485F536F6DE12C52 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftyJIRA/Pods-SwiftyJIRA-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4ED3C2733147708EEDA54B8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EA15EC3D1F6CDDFD71A79A01 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftyJIRATests/Pods-SwiftyJIRATests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		95AFBD1C1AF1BFE200A9210E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95AFBD671AF1C53500A9210E /* String+SwiftyJIRA.swift in Sources */,
-				95AFBD651AF1C53500A9210E /* JIRASession.swift in Sources */,
-				95AFBD611AF1C53500A9210E /* Dictionary+SwiftyJIRA.swift in Sources */,
-				95AFBD631AF1C53500A9210E /* JIRAIssue.swift in Sources */,
+				95E4E3F61C5AA3DE005CD2D2 /* JIRAIssueType.swift in Sources */,
+				95E4E3F81C5AA405005CD2D2 /* JIRAProject.swift in Sources */,
+				953CEDBD1C288AE300C197F5 /* JIRASession.swift in Sources */,
+				95E4E3FC1C5ABDF8005CD2D2 /* JIRAServerInfo.swift in Sources */,
+				953CEDBC1C288AE300C197F5 /* JIRAIssue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,21 +380,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95AFBD681AF1C53500A9210E /* String+SwiftyJIRA.swift in Sources */,
 				95AFBD341AF1BFE200A9210E /* SwiftyJIRATests.swift in Sources */,
-				95AFBD641AF1C53500A9210E /* JIRAIssue.swift in Sources */,
-				95AFBD661AF1C53500A9210E /* JIRASession.swift in Sources */,
-				95AFBD621AF1C53500A9210E /* Dictionary+SwiftyJIRA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		95AFBD2F1AF1BFE200A9210E /* PBXTargetDependency */ = {
+		953CEDE21C28CB3000C197F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 95AFBD201AF1BFE200A9210E /* SwiftyJIRA */;
-			targetProxy = 95AFBD2E1AF1BFE200A9210E /* PBXContainerItemProxy */;
+			targetProxy = 953CEDE11C28CB3000C197F5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -285,6 +417,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -354,6 +487,7 @@
 		};
 		95AFBD381AF1BFE200A9210E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3646538367D120788FA401D /* Pods-SwiftyJIRA.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -362,6 +496,7 @@
 				INFOPLIST_FILE = SwiftyJIRA/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wearehathway.apps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -369,6 +504,7 @@
 		};
 		95AFBD391AF1BFE200A9210E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7580A3457C0F1D7087ADB98F /* Pods-SwiftyJIRA.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -377,6 +513,7 @@
 				INFOPLIST_FILE = SwiftyJIRA/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wearehathway.apps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -384,30 +521,28 @@
 		};
 		95AFBD3B1AF1BFE200A9210E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9316C1610CE51D134582C0F4 /* Pods-SwiftyJIRATests.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = SwiftyJIRATests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wearehathway.apps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		95AFBD3C1AF1BFE200A9210E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D29A03BCC6653BBB7E122D3 /* Pods-SwiftyJIRATests.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = SwiftyJIRATests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wearehathway.apps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

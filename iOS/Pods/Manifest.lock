@@ -1,0 +1,13 @@
+PODS:
+  - JSONRequest (0.3.0)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - JSONRequest
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  JSONRequest: 582f9eae276efc09b388a27c0d8d051e830f0cb3
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+COCOAPODS: 0.39.0

@@ -7,18 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		958448B51AE7EF570074EE44 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 958448B31AE7EF570074EE44 /* Config.plist */; };
+		953CEDA61C2887E100C197F5 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 953CEDA51C2887E100C197F5 /* Config.plist */; };
+		953CEDAD1C288A7C00C197F5 /* JIRAIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953CEDA91C288A7C00C197F5 /* JIRAIssue.swift */; };
+		953CEDAE1C288A7C00C197F5 /* JIRASession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953CEDAA1C288A7C00C197F5 /* JIRASession.swift */; };
+		953CEDB01C288A8B00C197F5 /* JIRAIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953CEDA91C288A7C00C197F5 /* JIRAIssue.swift */; };
+		953CEDB11C288A8B00C197F5 /* JIRASession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953CEDAA1C288A7C00C197F5 /* JIRASession.swift */; };
 		959AB0B21AE75AB9003289B8 /* SwiftyJIRA.h in Headers */ = {isa = PBXBuildFile; fileRef = 959AB0B11AE75AB9003289B8 /* SwiftyJIRA.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		959AB0B81AE75AB9003289B8 /* SwiftyJIRA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 959AB0AC1AE75AB9003289B8 /* SwiftyJIRA.framework */; };
 		959AB0CF1AE75DC3003289B8 /* JIRASessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959AB0CE1AE75DC3003289B8 /* JIRASessionTests.swift */; };
-		95AFBD471AF1C2F600A9210E /* Dictionary+SwiftyJIRA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD431AF1C2F600A9210E /* Dictionary+SwiftyJIRA.swift */; };
-		95AFBD481AF1C2F600A9210E /* JIRAIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD441AF1C2F600A9210E /* JIRAIssue.swift */; };
-		95AFBD491AF1C2F600A9210E /* JIRASession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD451AF1C2F600A9210E /* JIRASession.swift */; };
-		95AFBD4A1AF1C2F600A9210E /* String+SwiftyJIRA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD461AF1C2F600A9210E /* String+SwiftyJIRA.swift */; };
-		95AFBD4C1AF1C34800A9210E /* Dictionary+SwiftyJIRA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD431AF1C2F600A9210E /* Dictionary+SwiftyJIRA.swift */; };
-		95AFBD4D1AF1C34800A9210E /* JIRAIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD441AF1C2F600A9210E /* JIRAIssue.swift */; };
-		95AFBD4E1AF1C34800A9210E /* JIRASession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD451AF1C2F600A9210E /* JIRASession.swift */; };
-		95AFBD4F1AF1C34800A9210E /* String+SwiftyJIRA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AFBD461AF1C2F600A9210E /* String+SwiftyJIRA.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,17 +28,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		958448B31AE7EF570074EE44 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Config.plist; path = ../SwiftyJIRA/Config.plist; sourceTree = "<group>"; };
+		953CEDA51C2887E100C197F5 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		953CEDA91C288A7C00C197F5 /* JIRAIssue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JIRAIssue.swift; sourceTree = "<group>"; };
+		953CEDAA1C288A7C00C197F5 /* JIRASession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JIRASession.swift; sourceTree = "<group>"; };
 		959AB0AC1AE75AB9003289B8 /* SwiftyJIRA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJIRA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		959AB0B01AE75AB9003289B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		959AB0B11AE75AB9003289B8 /* SwiftyJIRA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyJIRA.h; sourceTree = "<group>"; };
 		959AB0B71AE75AB9003289B8 /* SwiftyJIRATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyJIRATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		959AB0BD1AE75AB9003289B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		959AB0CE1AE75DC3003289B8 /* JIRASessionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JIRASessionTests.swift; sourceTree = "<group>"; };
-		95AFBD431AF1C2F600A9210E /* Dictionary+SwiftyJIRA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Dictionary+SwiftyJIRA.swift"; path = "../Common/Dictionary+SwiftyJIRA.swift"; sourceTree = "<group>"; };
-		95AFBD441AF1C2F600A9210E /* JIRAIssue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JIRAIssue.swift; path = ../Common/JIRAIssue.swift; sourceTree = "<group>"; };
-		95AFBD451AF1C2F600A9210E /* JIRASession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JIRASession.swift; path = ../Common/JIRASession.swift; sourceTree = "<group>"; };
-		95AFBD461AF1C2F600A9210E /* String+SwiftyJIRA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "String+SwiftyJIRA.swift"; path = "../Common/String+SwiftyJIRA.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +58,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		953CEDA71C288A7C00C197F5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				953CEDA91C288A7C00C197F5 /* JIRAIssue.swift */,
+				953CEDAA1C288A7C00C197F5 /* JIRASession.swift */,
+			);
+			name = Sources;
+			path = ../Sources;
+			sourceTree = "<group>";
+		};
 		959AB0A21AE75AB9003289B8 = {
 			isa = PBXGroup;
 			children = (
-				95AFBD4B1AF1C31900A9210E /* Common */,
+				953CEDA71C288A7C00C197F5 /* Sources */,
 				959AB0AE1AE75AB9003289B8 /* SwiftyJIRA */,
 				959AB0BB1AE75AB9003289B8 /* SwiftyJIRATests */,
 				959AB0AD1AE75AB9003289B8 /* Products */,
@@ -112,21 +116,10 @@
 		959AB0BC1AE75AB9003289B8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				958448B31AE7EF570074EE44 /* Config.plist */,
 				959AB0BD1AE75AB9003289B8 /* Info.plist */,
+				953CEDA51C2887E100C197F5 /* Config.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		95AFBD4B1AF1C31900A9210E /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				95AFBD431AF1C2F600A9210E /* Dictionary+SwiftyJIRA.swift */,
-				95AFBD441AF1C2F600A9210E /* JIRAIssue.swift */,
-				95AFBD451AF1C2F600A9210E /* JIRASession.swift */,
-				95AFBD461AF1C2F600A9210E /* String+SwiftyJIRA.swift */,
-			);
-			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +178,9 @@
 		959AB0A31AE75AB9003289B8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Hathway, Inc.";
 				TargetAttributes = {
 					959AB0AB1AE75AB9003289B8 = {
@@ -226,7 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				958448B51AE7EF570074EE44 /* Config.plist in Resources */,
+				953CEDA61C2887E100C197F5 /* Config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,10 +232,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95AFBD471AF1C2F600A9210E /* Dictionary+SwiftyJIRA.swift in Sources */,
-				95AFBD481AF1C2F600A9210E /* JIRAIssue.swift in Sources */,
-				95AFBD491AF1C2F600A9210E /* JIRASession.swift in Sources */,
-				95AFBD4A1AF1C2F600A9210E /* String+SwiftyJIRA.swift in Sources */,
+				953CEDB01C288A8B00C197F5 /* JIRAIssue.swift in Sources */,
+				953CEDB11C288A8B00C197F5 /* JIRASession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,11 +241,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95AFBD4C1AF1C34800A9210E /* Dictionary+SwiftyJIRA.swift in Sources */,
-				95AFBD4D1AF1C34800A9210E /* JIRAIssue.swift in Sources */,
-				95AFBD4E1AF1C34800A9210E /* JIRASession.swift in Sources */,
-				95AFBD4F1AF1C34800A9210E /* String+SwiftyJIRA.swift in Sources */,
 				959AB0CF1AE75DC3003289B8 /* JIRASessionTests.swift in Sources */,
+				953CEDAD1C288A7C00C197F5 /* JIRAIssue.swift in Sources */,
+				953CEDAE1C288A7C00C197F5 /* JIRASession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +279,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -363,6 +355,7 @@
 				INFOPLIST_FILE = SwiftyJIRA/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wearehathway.apps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -380,6 +373,7 @@
 				INFOPLIST_FILE = SwiftyJIRA/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wearehathway.apps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -399,6 +393,7 @@
 				);
 				INFOPLIST_FILE = SwiftyJIRATests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wearehathway.apps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -413,6 +408,7 @@
 				);
 				INFOPLIST_FILE = SwiftyJIRATests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wearehathway.apps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

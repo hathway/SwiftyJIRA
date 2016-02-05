@@ -1,0 +1,5 @@
+included:
+- Sources
+- Mac/SwiftyJIRATests
+- iOS/SwiftyJIRATests
+

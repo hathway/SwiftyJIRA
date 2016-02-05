@@ -1,0 +1,6 @@
+framework module JSONRequest {
+  umbrella header "JSONRequest-umbrella.h"
+
+  export *
+  module * { export * }
+}

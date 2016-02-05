@@ -1,0 +1,6 @@
+framework module Pods_SwiftyJIRA {
+  umbrella header "Pods-SwiftyJIRA-umbrella.h"
+
+  export *
+  module * { export * }
+}
